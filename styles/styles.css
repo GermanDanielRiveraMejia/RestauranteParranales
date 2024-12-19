@@ -1,0 +1,225 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: url('../assets/img/Img Background.jpg') no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+    flex-wrap: wrap;
+}
+
+/* Logo and Title */
+.menu-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.logo img {
+    height: 200px; /* Aumentar tamaño del logo */
+    width: auto;
+    border-radius: 15px;
+}
+
+.header-content-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.header-content-container h1 {
+    font-size: 2rem;
+    margin-left: 20px;
+    white-space: nowrap; /* Evitar salto de línea */
+}
+
+/* Navbar al lado derecho del h1 */
+.navbar {
+    margin-left: auto;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Sabor y Bendición */
+.sabor-Bendicion {
+    background-color: #FFA02A; /* Anaranjado suave */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.5rem;
+}
+
+/* Redes Sociales e Imagen */
+.redes-sociales {
+    position: absolute;
+    top: 65%;
+    left: 20px;
+    transform: translateY(-50%);
+    width: 150px;
+    padding: 10px;
+    /*background-color: rgba(255, 255, 255, 0.9);*/
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+.redes-sociales a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: block;
+    margin: 10px 0;
+    align-items: center;
+}
+
+.redes-sociales img {
+    margin-right: 10px;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+}
+
+.img-sabor-bendicion {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+.img-sabor-bendicion img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Disfruta del Menú */
+.disfruta-menu {
+    background-color: #FFA02A;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.img-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.img-menu a img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.img-menu a img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .menu-container {
+        flex-direction: column;
+    }
+
+    .header-content-container {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .logo img {
+        height: 100px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    .redes-sociales {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin: 20px auto;
+        width: auto;
+    }
+
+    .img-sabor-bendicion {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .img-menu {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .img-menu a img {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo img {
+        height: 80px;
+    }
+
+    .header-content-container h1 {
+        font-size: 1.5rem;
+        margin: 10px 0;
+    }
+
+    .navbar ul li {
+        margin: 5px 0;
+    }
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
